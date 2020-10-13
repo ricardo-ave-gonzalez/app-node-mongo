@@ -1,0 +1,29 @@
+{
+  "name": "task_lab",
+  "version": "2.0.0",
+  "description": "Node.js trabajo con mongo",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/",
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-mongo-db": "^2.0.4",
+    "express-session": "^1.17.1",
+    "express-validator": "^3.2.0",
+    "faker": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.6.2",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "underscore": "^1.11.0",
+    "uuid": "^8.3.1"
+  }
+}

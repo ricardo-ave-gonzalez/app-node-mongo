@@ -1,0 +1,33 @@
+<%- include ('../layouts/header.ejs');%>	
+
+<% if (messages.error) { %>
+	<p style="color:red"><%- messages.error %></p>
+<% };%>
+
+<% if (messages.success) { %>
+	<p style="color:green"><%- messages.success %></p>
+<% }; %>
+
+<form action="/users/add" method="post" name="form1">
+	<table width="25%" border="0">
+		<tr> 
+			<td>Nombre</td>
+			<td><input type="text" name="nombre" id="name" value="<%= nombre %>" /></td>
+		</tr>
+		<tr> 
+			<td>Edad</td>
+			<td><input type="text" name="edad" value="<%= edad %>" /></td>
+		</tr>
+		<tr> 
+			<td>Email</td>
+			<td><input type="text" name="email" value="<%= email %>" /></td>
+		</tr>
+		<tr> 
+			<td></td>
+			<td><input class="btn btn-light" type="submit" name="Submit" value="Agregar" /></td>
+		</tr>
+	</table>
+</form>
+
+
+<%- include ('../layouts/footer.ejs');%>
